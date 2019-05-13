@@ -1,0 +1,37 @@
+                                              ISTE Python SMP Assignment-1
+                                                                   Gauri-17CO116
+
+1)	Output:
+        [‘1’,’S’,’T’,’E’]    (Changes made to list2 will be reflected onto list1 since list2 = list1)
+        [‘1’,’S’,’T’,’E’]
+        If line5 is replaced with list1+=[], then output will be
+        [‘1’,2,’T’,’E’]
+        (This is because list1 = list1 + [] will add one item to the list, while list1 += [] will copy all elements of right-hand-side list into the left-hand-side list.)
+
+2)	#Program to sort a list
+        nlist = [9,8,7,6,5,4,1]
+        nlist.sort()
+        print(nlist)
+
+       #Program to search for an element in a sorted list
+
+       from bisect import bisect_left 
+  
+       def BinarySearch(a, x): 
+       i = bisect_left(a, x) 
+       if i != len(a) and a[i] == x: 
+        print(i)
+       else: 
+        print(-1)
+
+
+
+3)	Output:
+        False (id(l1)!=id(l2))
+        True (id(str1)=id(str2))
+   
+4)	#Assume that the given list C is a then new list b is defined as
+        D = [x for x in range(len(C)) if x*x*x % 3 == 1] 
+        #D now contains all elements of C whose cubes % 3 = 1
+
+ 
