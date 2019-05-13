@@ -1,0 +1,13 @@
+output :-
+     ['1', 'S', 'T', 'E']
+     ['1', 'S', 'T', 'E']
+
+output with list1+=[]
+
+     ['1', 'S', 'T', 'E']
+     ['1', 2, 'T', 'E']
+
+Assignment with list2 = list1  does not make a copy. Instead, assignment makes the two variables point to the one list in memory.
+so if we change list2 it will reflect in list1 because they are same
+  
+list1=list1+[] and list1+=[] are supposed to work same but in case of list it's not i don't know why and i am unable to find it on web also, please explain..
