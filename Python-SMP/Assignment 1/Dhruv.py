@@ -1,0 +1,51 @@
+2.a=[2,3,4,6,5,7,1,8]
+print(a)
+b=0
+e=0
+while(b!=len(a)):
+	for i in range(b,8):
+		if(a[i]<a[b]):
+			c=a[b]
+			a[b]=a[i]
+			a[i]=c
+	b+=1	
+print(a)
+print("Which element tou want to find?")
+d=int(input())
+for i in range(0,len(a)):
+	if(a[i]==d):
+		e=1
+		break
+if(e==1):
+	print("Element is found and position =",i)
+else:
+	print("Element is not found")
+
+4.
+a=int(input("How many number you want to add?"))
+b=[]
+for i in range(0,a):
+	b.append(int(input("Enter number")))
+print(b)
+print("Numbers accroding to condition")
+for i in range(0,a):
+	if((b[i]**3)%3==1):
+		print(b[i])
+1.
+In the first one
+First output:
+['1','S','T','E']
+['1','S','T','E']
+Reason is that list2=list1 create same object so change in list2 will also create change in list1.
+After that list1=list1+[] will create new object for list1. So after that change in list2 will not create change in list1.
+Second output:
+['1','S','T','E']
+['1',2,'T','E']
+Here for first one reason is same that list2=list1
+Here list1+=[] will not create new object for list1. So again change in list2 will affect list1.
+
+3.
+Output:
+False
+True
+Reason is that l1 and l2 are different object. And both str1 and str2 are same object.
