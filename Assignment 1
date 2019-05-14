@@ -1,0 +1,33 @@
+  QUESTION 1:
+ ['1','S','T','E'] 
+['1','S','T','E']
+The list1=list2 statement in the code creates the same object for both of them so change in list2 also create a 
+change in list1.
+The output after change of statement 5 is:
+['1','S','T','E'] 
+['1','2','T','E']
+because in second output here the list1+=[] will not create a new object for list1 hence change in the value of list2 changes the
+value of list1
+
+QUESTION 2:
+list=[1,4,2,7,9,5]
+newlist=[]
+minval=list[0]
+for x in list:
+  if (x < minval):
+    minival=x
+    newlist.append(minval)
+    
+    for i in list:
+	if(i==4):
+		print("Element exist")
+	else:
+		print("Element doesn't exist")
+
+  QUESTION 3:
+  False
+  True
+  
+  QUESTION 4:
+  l=[1,4,3,9,5,6]
+  newlist=[i for i in list if(((i*i*i*)%3)==1)]
