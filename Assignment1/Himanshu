@@ -1,0 +1,33 @@
+Question 1: Output:['1','S','T','E']
+                   ['1','S','T','E']
+                   Line 2 of the code assigns list1 and list2 to the same object(identity(id) will be same) therefore the change mafe in list 2 is reflected in list1.
+                   Line 5 assigns list1 to be a combination of its previous self and an empty list, thereby giving it a new id.Therefore any further changes made in list2 is not reflected in list1.
+                   When line 5 is changed with list1+=[], an empty list is appended to list1. The id of list1 remains the same. Therefore changes made in list2 shows up in list1.
+                   Therefore Output will be:['1','S','T','E']
+                                            ['1','2','T','E']
+                                            
+Question 2:The following program sorts a given list in ascending order
+list=[2,4,1,5,6,8,7,9,3]
+print('Initial list:',list)
+for i in range(9):
+
+    for j in range(9):
+        if list[i] < list[j]:
+            y = list[i]
+            list[i] = list[j]
+            list[j] = y
+print('Sorted list:',list)                                    
+
+Question 3:Output: FALSE
+                   TRUE
+                   The two lists l1 and l2 have different ids even though they have same values(they point to different objects ewith similar info). Therefore line 3 gave FALSE.
+                   The two string variables have the same id as that of'Good'.They are evaluated differently. Therefore line 6 gives TRUE.
+                   
+Question 4:The code keeps all values that have cubes whose remaider when divided by 3 is 1 
+l=[1,2,22,67,100,55,66]
+print(l)
+for i in l :
+    if not (i*i*i)%3==1:
+        l.remove(i)
+
+print(l)
