@@ -1,0 +1,8 @@
+l1=[1,2,3]
+l2=[1,2,3]
+print(id(l1)==id(l2))   # False for two list of same element id is different,different object
+
+str1='good'
+str2='good'
+print(id(str1)==id(str2))  # True for same numbers and string id is different,same object
+
