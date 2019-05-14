@@ -1,0 +1,66 @@
+Q1.
+
+list2 = list1 gives list2 the same id or address as list1. When list1 = list1 + [] is excecuted, list1 gets a new id. 
+First output:
+['1','S','T','E']
+['1','S','T','E']
+When we write list1 += [], the address is not changed. 
+Second output:
+['1','S','T','E']
+['1',2,'T','E']
+
+Q2.
+
+Sorting algorithm:
+ 
+list1 = [10,5,3,2,7,1,20,100,-5]
+flag = 0
+while True:
+    for j in range(len(list1)):
+        flag = 0
+        for i in range(len(list1) - 1):
+            if list1[i] > list1[i+1]:
+                temp = list1[i]
+                list1[i] = list1[i+1]
+                list1[i+1] = temp
+                flag = 1
+    if flag == 0:
+        break
+print(list1)
+
+Output:
+[-5, 1, 2, 3, 5, 7, 10, 20, 100]
+
+Searching algorithm:
+
+list1 = [10,5,3,2,7,1,20,100,-5]
+flag = 0
+while True:
+    for j in range(len(list1)):
+        flag = 0
+        for i in range(len(list1) - 1):
+            if list1[i] > list1[i+1]:
+                temp = list1[i]
+                list1[i] = list1[i+1]
+                list1[i+1] = temp
+                flag = 1
+    if flag == 0:
+        break
+print(list1)
+
+Output:
+[-5, 1, 2, 3, 5, 7, 10, 20, 100]
+Element comes at positions:
+4
+
+Q3.
+
+Output:
+False
+True
+
+Q4. l = [i for i in L if (i**3) % 3 == 1]
+
+
+
+
