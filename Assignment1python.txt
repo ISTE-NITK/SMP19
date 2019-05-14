@@ -1,0 +1,27 @@
+PYTHON SMP
+
+
+Ans1) Output:['1', 'S', 'T', 'E']
+            ['1', 'S', 'T', 'E']
+      The list list1 is created with the characters I,S,T,E and first character is replaced by the character '1'.
+      Both lists are printed.
+      When the line 5 is changed to list1+=[] the second element of list2 is changed to 2.
+
+
+Ans3) Output:FALSE
+ 	     TRUE
+
+Ans2) a={3,5,7,4,1,2}
+    n = len(a)
+ 
+    for i in range(n):
+ 
+         for j in range(0, n-i-1):
+ 
+             if arr[j] > arr[j+1] :                           #Bubble_Sorting  
+                arr[j], arr[j+1] = arr[j+1], arr[j] 
+ 
+    print(a)
+
+Ans4) for i in range(0,len(L)-1):                #for_defined_L_And_list3 
+          if((L[i]**3)%3==1):list3+=[L[i]]
