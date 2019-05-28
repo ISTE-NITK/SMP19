@@ -1,0 +1,13 @@
+Q5
+
+n=int(input("Enter Size Of Pattern\n"))  #Ask Size of pattern to user
+for i in range (n):
+    for j in range (i,n-1):   #prints preliminary spaces
+        print(" ",end="")
+    for j in range (2*i+1):   #prints *
+        print("*",end="") 
+    for j in range (i,n-1):   #prints trailing spaces
+        print(" ",end="")
+    print("")    #last newline character
+
+
