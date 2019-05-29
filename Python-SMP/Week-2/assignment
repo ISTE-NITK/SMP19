@@ -1,3 +1,26 @@
+
+--------------------------------------------------------------------------------
+Q3
+
+
+def gcd(a,b,c):  #Function Definition
+
+    if a%c==0 and b%c==0:
+        return int(c)
+    else:
+        return gcd(a,b,c-1)  #recursive call
+
+
+
+x,y=(input("Enter Two space separated Numbers:\n").split())
+x,y=[int(x),int(y)]  #typecasting of input  
+z=gcd(x,y,min(x,y))
+
+
+
+print("The Gcd of",x,"and",y,"is",z)
+
+--------------------------------------------------------------------------------
 Q5
 
 n=int(input("Enter Size Of Pattern\n"))  #Ask Size of pattern to user
