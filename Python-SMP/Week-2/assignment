@@ -6,6 +6,8 @@ screenshots are in this folder
 --------------------------------------------------------------------------------
 Q2
 
+
+
 class item:
     def __init__(self,name,price,size=2):
         self.name=name
@@ -47,9 +49,9 @@ class bill():
                 total+=i.price*1.5
         return total
     def offer(self):
-        x = sum(p.size == 1 for p in self.selection)
-        y = sum(p.size == 2 for p in self.selection)
-        z = sum(p.size == 3 for p in self.selection)
+        x = sum((p.size == 1 and (p.name=='Margarita' or p.name=='Veggie' or p.name=='Chicken')) for p in self.selection )
+        y = sum((p.size == 2  and (p.name=='Margarita' or p.name=='Veggie' or p.name=='Chicken')) for p in self.selection)
+        z = sum((p.size == 3 and (p.name=='Margarita' or p.name=='Veggie' or p.name=='Chicken')) for p in self.selection)
         while(x>1):
             self.selection.append(menu[3])
             x-=2
@@ -84,15 +86,21 @@ order1=input().split()
 for x in order1:
     y=int(x)
     order2.append(y)
+try :
+    for x in order2:
+        order3.append(menmen[(x//10)-1][(x%10)-1])
+except:
+    print("ITEM UNAVAILABLE PLEASE RESTART PROGRAM AND TRY AGAIN")
+    exit(0)
 
 print("ORDER SUCCESSFULLY ACCEPTED AS:",order2)
-for x in order2:
-    order3.append(menmen[(x//10)-1][(x%10)-1])
+
+
 for x in order3:
     x.tell()
 
 
-print("PLEASE ENTER D FOR DINE IN AND T FOR TAKEAWAY")
+print("PLEASE ENTER D FOR DINE IN AND T FOR TAKEAWAY(DEFAULT VALUE IS TAKEAWAY)")
 a=input()
 bill1=bill(order3,a)
 amount=bill1.tot()
@@ -105,6 +113,7 @@ if a=='D':
     print("YOU HAVE CHOSEN TO DINE-IN")
 else:
     print("YOU HAVE CHOSEN TAKEAWAY")
+
 
 --------------------------------------------------------------------------------
 Q3
