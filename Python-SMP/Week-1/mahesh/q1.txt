@@ -1,0 +1,10 @@
+yes there is a change in the output 
+
+in the first case the output will be ['1','s','t','e']
+				     ['1','s','t','e']
+
+in the modified case the output will be ['1','s','t','e']
+					['1','2','t','e']
+
+
+the reason is : in the first case list1 = list1 + [] will create a new object for list1 and i the second case list1+=[] a new object is not created so the change is reflected in list1 

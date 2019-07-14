@@ -1,0 +1,5 @@
+the output will be false 
+		   true
+
+l1 and l2 are lists and are not pointing to the same object and hence false
+but str1 and str2 are pointing to the same object and hence true
