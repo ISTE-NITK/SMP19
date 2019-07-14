@@ -1,0 +1,43 @@
+1.
+list1=['I','S','T','E']
+list2=list1 #list2 is now a reference to list1
+list2[0]='1' # list modified
+print(list1)  #['1','S','T','E'] as list1 and list2 are references to same object
+list1=list1+[] #list1 is now a reference to a new list . however values in list remains same as a null list is added
+list2[1]=2 #has no effect on the list refered by list1 as they are references to different lists
+print(list1) #['1','S','T','E']
+
+
+2.
+#sort using bubble sort technique
+a=[2,1,5,2,8,6]
+for i in range(len(a)) :
+    for j in range(len(a)-1-i) :
+        if a[j]>a[j+1]  :
+            t=a[j]
+            a[j]=a[j+1]
+            a[j+1]=t
+print(a)
+
+
+#search using linear search technique
+a=[1,2,3,4,5,6,7]
+e=4
+for i in range(len(a)) :
+    if a[i]==e :
+        break
+print(e ," found at index ",i)
+
+
+
+3.
+l1=[1,2,3]
+l2=[1,2,3]
+print(id(l1)==id(l2)) #False. because in case of lists two different objects are created.
+str1='Good'
+str2='Good'
+print(id(str1)==id(str2)) #True . because objects str1 and str2 are same unlike in case of lists 
+
+
+4.
+L=[x for x in L if x*x*x%3==1]
