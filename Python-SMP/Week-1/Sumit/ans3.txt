@@ -1,0 +1,8 @@
+Answer 3:
+	Output:
+		False
+		True
+	In case of lists python creates a new object everytime for every variable with different address.
+	But in case of strings it creates a string and assigns it's address to the variable. So, even if we
+	create two variables they both will point to the same string. If we change the value of variable it will
+	not change the string instead it will create another string and assign that address to the variable. 

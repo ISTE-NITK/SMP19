@@ -1,0 +1,14 @@
+Answer 1: 
+	a)Output:
+		['1', 'S', 'T', 'E']
+		['1', 'S', 'T', 'E']
+	When doing lis2=list1, it passes a reference to list1.So, list2 and list1 have the same address and point to the same object.
+	So any change in list2 will also change list1.
+	Now when doing list1=list1+[], it creates a new object with a new address of list1. So list1 and list2 have different address
+	and a change in one will not affect the other.
+
+	b)Output:
+		['1', 'S', 'T', 'E']
+		['1', 2, 'T', 'E']
+	"=" reassigns the variable giving it a different address whereas += just modifies the data structure and does not change the address
+	of the variable.
