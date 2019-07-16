@@ -1,0 +1,36 @@
+1.First output:
+['1','S','T','E']
+['1','S','T','E']
+Reason is that list2=list1 creates same object so any change in list2 will be reflected in list1. list1=list1+[] will create a new object,list1. So after that change in list2 will not be reflected  in list1.
+Second output:
+['1','S','T','E']
+['1',2,'T','E']
+For the  first one reason is same that list2=list1.list1+=[] will not create anynew object. So change in list2 will be reflected in  list1.
+
+2.#part1
+list=[42,61,58,2,82,67,102,78]
+for i in range(len(list)) :
+	for j in range(len(list)-1-i) :
+		if list[j]>list[j+1]  :
+	            b=list[j]
+	            list[j]=list[j+1]
+	            list[j+1]=b
+print(list)
+
+#part2
+list=[42,61,58,2,82,67,102,78]
+b=67
+for i in range(len(a)) :
+	    if list[i]==b :
+	        break
+print(e ," found at index ",i)
+
+
+3.Output:
+False
+True
+Reason is that l1 and l2 are different objects but  both str1 and str2 are the same object.
+
+4.list=[a for a in list if a*a*a%3==1]
+
+
