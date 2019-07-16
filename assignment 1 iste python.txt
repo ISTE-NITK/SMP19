@@ -1,0 +1,38 @@
+A1) Both the results are same, as list1+=[] is equivalent to list1 = list1 + [].
+      Result of print(lis1) is [‘1’,’S’,’T’,’E]
+       But print(list2) is [‘1’,’2’,’T’,’E’]
+In the end the identity of the list1 got changed due to addition of []. Hence changing the value of list2 doesn’t change the value of list1 anymore as both of them point to different objects now due to change in the id of both the lists.
+
+A2) for j in range(len(a)):
+...  swapped= False
+...  i=0
+...  while i<len(a)-1:
+...   if a[i]>a[i+1]:
+...    a[i],a[i+1] = a[i+1],a[i]
+...    swapped= True
+...   i=i+1
+...  if swapped== False:
+...   break
+
+list=9
+list1=[7,8,9,10]
+>>> for i in range(len(list1)):
+...  if list==list1[i]:
+...   print('element found at posn',i)
+...  else :
+...   i+=1
+...
+element found at posn 2
+
+A3) False, True
+Result of first print is False because == is a relational operator and it compares the ID of the 2 lists. It wont be true until both the lists point to the same object.
+       Result of second print is True because strings are not evaluated like arrays in python.]
+
+A4) 
+     i=0
+>>> list1=[7,8,9,10]
+>>> for i in range(len(list1)):
+...  if (list1[i]*list1[i]*list1[i])%3!=1:
+...   list1.remove(i)
+...  else:
+...   break
