@@ -1,0 +1,23 @@
+                break 
+if(e==1): 
+        print("Element is found and position =",i) 
+else: 
+        print("Element is not found") 
+ 
+ 3. 
+Output: 
+False 
+True 
+Reason is that l1 and l2 are different object. And both str1 and str2 are same object. 
+ 
+ 4. 
+a=int(input("How many number you want to add?")) 
+b=[] 
+for i in range(0,a): 
+        b.append(int(input("Enter number"))) 
+print(b) 
+print("Numbers accroding to condition") 
+for i in range(0,a): 
+        if((b[i]**3)%3==1): 
+                print(b[i]) 
+
