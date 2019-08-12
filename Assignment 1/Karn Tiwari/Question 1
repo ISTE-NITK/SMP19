@@ -1,0 +1,17 @@
+List1=['I','S','T','E']
+List2=List1
+List2[0]=’1’
+print(List1)     #['1', 'S', 'T', 'E'] id of list1 and list2 are same object so any change in list2 is reflected in list1
+List1=List1+[]
+List2[1]=2
+print(List1)     #['1', 'S', 'T', 'E'] id of list1 and list2 are now differen object as list1 is concatenated with Null list
+
+#Yes the output is different
+
+List1=['I','S','T','E']
+List2=List1
+List2[0]=’1’
+print(List1)     #['1', 'S', 'T', 'E'] id of list1 and list2 are same object so any change in list2 is reflected in list1
+List1+=[]
+List2[1]=2
+print(List1)     #['1', '2', 'T', 'E'] id of list1 and list2 are same object
