@@ -1,0 +1,34 @@
+1) output: ['1','S','T','E'] and ['1','S','T','E']
+   when the line is changed ['1','S','T','E'] and ['1',2,'T','E'] 
+  In the first case, if list2 changes then list1 changes as both should be equal. As we used (list1=list1+[]) this changes list1 into some other list(list3).so formed new list1 is nolonger equalto list2.
+In the second case, we used list1+=[] which changes only the values of it not the list(id).
+ 
+
+
+2) For sorting
+    l=[1,2,3,4]
+   for i in range(len(l)):
+    for j in range(i+1,len(l)):
+     if l[i]>l[j]:
+       temp=l[i]
+      l[i]=i[j]
+     l[j]=temp  
+for searching
+     n=4
+    for i in l
+    if i==n:
+        print("number found")
+
+
+3)False
+  True
+
+4)
+  for i in range(len(l)):
+    if (l[i]*l[i]*l[i])%3 == 1:
+        print(l[i])
+    
+
+        
+
+       
